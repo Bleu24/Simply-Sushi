@@ -11,10 +11,12 @@ export function createSubDiv(){
     const h = document.createElement('h3');
     const img = new Image();
     const ja = document.createElement('h2');
+    ja.lang = 'ja';
 
     /**
      * Sets the class name using BEM methodology for the parent and its children
      * @param {string} blockName uses BEM naming convention
+     * @param {string} modifier modifier
      */
     const setClassName = (blockName, modifier) => {
 
