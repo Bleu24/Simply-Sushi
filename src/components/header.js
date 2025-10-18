@@ -13,17 +13,23 @@ export default function Header() {
 
 
     const homeBtn = Button("HOME");
-    const mainBtn = Button("MENU");
+    const menuBtn = Button("MENU");
     const aboutBtn = Button("ABOUT");
     const contactBtn = Button("CONTACT");
     const bookBtn = Button('RESERVATIONS →');
-    const buttonList = [homeBtn, mainBtn, aboutBtn, contactBtn]
+    const buttonList = [homeBtn, menuBtn, aboutBtn, contactBtn];
 
     for (const b of buttonList) {
         btnDiv.appendChild(b)
+        b.classList.add('nav__btn');
     }
 
-    ctaDiv.appendChild(bookBtn)
+    homeBtn.dataset.tab = 'home';
+    menuBtn.dataset.tab = 'menu';
+    aboutBtn.dataset.tab = 'about';
+    contactBtn.dataset.tab = 'contact';
+
+    ctaDiv.appendChild(bookBtn);
 
     nav.appendChild(logoDiv);
     nav.appendChild(btnDiv);
