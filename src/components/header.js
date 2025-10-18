@@ -16,7 +16,7 @@ export default function Header() {
     const mainBtn = Button("MENU");
     const aboutBtn = Button("ABOUT");
     const contactBtn = Button("CONTACT");
-    const bookBtn = Button('RESERVATIONS');
+    const bookBtn = Button('RESERVATIONS →');
     const buttonList = [homeBtn, mainBtn, aboutBtn, contactBtn]
 
     for (const b of buttonList) {
