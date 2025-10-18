@@ -6,7 +6,7 @@
  * @returns HTMLNodeElement (Subdiv)
  */
 
-export function createSubDiv(){
+export default function createSubDiv(){
     const el = document.createElement('div');
     const h = document.createElement('h3');
     const img = new Image();
