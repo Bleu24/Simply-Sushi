@@ -1,0 +1,80 @@
+.menu__title {
+    color: var(--cta-text);
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 3rem;
+    letter-spacing: -3px;
+    font-weight: 900;
+}
+
+.item__container {
+    height: auto;
+    width: 400px;
+    background-color: #181920;
+    border: 2px solid #2E303E;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 0.8rem;
+    gap: 1rem;
+}
+
+.item__body {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    color: var(--cta-text);
+}
+
+.item__heading {
+    font-weight: 900;
+    font-family: var(--shippori);
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: -5px;
+
+}
+
+.item__title {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__subHeading {
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.item__price {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Arial Black', serif;
+    border-radius: 0.4rem;
+}
+
+.item__header {
+    height: 100px;
+}
+
+.item__img {
+    justify-self: center;
+    background-color: #2E303E;
+    border-radius: 1rem;
+    width: 120px;
+    height: 120px;
+}
+
+
+
+/* card placements */
+.uramaki {
+    grid-column: 2 / 5;
+}
+
+.nigiri {
+    grid-column: 9 / 12;
+}
