@@ -12,7 +12,7 @@ module.exports = {
     },
     devtool: 'eval-source-map',
     devServer: {
-        port: 5656,
+        port: 5500,
         watchFiles: ['./src/app.html', './src/app.js', './src/styles.css']
     },
     module: {
@@ -37,7 +37,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Restaurant App',
+            title: 'Simply Sushi - シンプリー・スシ',
             template: './src/app.html',
         })
     ],
