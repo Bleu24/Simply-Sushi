@@ -22,8 +22,9 @@
 
 .item__body {
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1.5fr;
     color: var(--cta-text);
+    align-self: center;
 }
 
 .item__heading {
@@ -36,7 +37,6 @@
 }
 
 .item__title {
-    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,14 +44,14 @@
 
 .item__subHeading {
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: -3px;
     margin: 0;
 }
 
 .item__price {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Arial Black', serif;
     border-radius: 0.4rem;
 }
@@ -68,6 +68,12 @@
     height: 120px;
 }
 
+.item__desc {
+    margin: 0;
+    align-self: center;
+    font-size: 0.9rem;
+}
+
 
 
 /* card placements */
@@ -76,5 +82,11 @@
 }
 
 .nigiri {
+    justify-self: center;
+    grid-column: 5 / 9;
+}
+
+.maki {
+    justify-self: end;
     grid-column: 9 / 12;
 }
