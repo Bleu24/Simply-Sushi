@@ -1,7 +1,15 @@
+import { state } from "../utils/state";
+import { MenuItem } from "../classes/MenuItem";
+import createMenuItem from "../utils/createMenuItem";
+
 export default function Menu() {
     const div = document.getElementById('content');
-    const p = document.createElement('p');
-    div.appendChild(p);
-    p.textContent = 'Menu';
-    return div;
+    const item1 = new MenuItem('fuck', 'Sushi', 200, 'スシ' ,'Sweet and Fragrant Sushi');
+    const itemEl = createMenuItem(item1);
+
+    div.appendChild(itemEl);
+
+
+
+    
 }
