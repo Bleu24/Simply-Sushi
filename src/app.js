@@ -22,7 +22,7 @@ Header().addEventListener('click', e => {
     allBtns.forEach(b => {
         if (b === clickedBtn) {
             setComponentState(b, 'active');
-            removeChildren(state.tab);
+            if(b.dataset.tab !== state.activeContent) removeChildren(state.tab);
             renderTab(b.dataset.tab);
 
         } else {
