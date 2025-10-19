@@ -28,7 +28,7 @@ export default function Home() {
 
     subDivObj2.setJaText('こだわりの海苔で包む味');
     subDivObj2.setImgAlt('Nori on a basket');
-    subDivObj2.setHeadingInnerText('Flavor Wrapped in Carefully Selected Nori');
+    subDivObj2.setHeadingInnerText('Flavor Wrapped in <br> Carefully Selected Nori.');
 
 
     heroImg.alt = 'An image of a sushi'
@@ -42,6 +42,5 @@ export default function Home() {
     content.appendChild(subDivObj2.el);
 
     content.dataset.tab = 'home';
-    content.dataset.state = 'active';
     return content;
 }
