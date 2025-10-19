@@ -8,6 +8,7 @@ export default function renderTab(requestedTab) {
 
     if(requestedTab === state.activeContent) return;
     
+    state.activeContent = requestedTab;  
     switch (requestedTab) {
         case 'home':
             Home();
