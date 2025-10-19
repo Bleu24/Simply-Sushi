@@ -1,6 +1,8 @@
 import { state } from "./state";
 import Home from "../components/home";
 import Menu from "../components/menu";
+import About from "../components/about";
+import Contact from "../components/contact";
 
 export default function renderTab(requestedTab) {
 
