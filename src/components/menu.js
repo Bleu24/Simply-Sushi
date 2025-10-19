@@ -1,6 +1,7 @@
 import { state } from "../utils/state";
 import Uramaki from '../assets/img/uramaki.png';
-import Nigiri from '../assets/img/uramaki.png';
+import Nigiri from '../assets/img/nigiri.png';
+import Maki from '../assets/img/maki.png';
 import { MenuItem } from "../classes/MenuItem";
 import createMenuItem from "../utils/createMenuItem";
 
@@ -18,7 +19,10 @@ export default function Menu() {
 
     //Sushi Data
     const sushis = [
-        [Uramaki, 'Uramaki', 200, 'うらまき' ,'Sweet and Fragrant Uramaki'],
+        [Uramaki, 'Uramaki', 149.00, 'うらまき' ,'Rice on the outside, nori on the inside.'],
+        [Nigiri, 'Nigiri', 149.00, 'にぎり', 'A slice of fish atop a small bed of rice.'],
+        [Maki, 'Maki', 149.00, 'まきずし', 'Rice and fillings wrapped in nori (seaweed), sliced into bite-sized rolls.'],
+
         
 
     ]
