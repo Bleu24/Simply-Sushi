@@ -1,4 +1,12 @@
 export const state = {
     tab: document.querySelector('#content'),
-    activeContent: document.querySelector('#content').dataset.tab
+
+    get activeContent() {
+        return document.querySelector('#content').dataset.tab;
+    },
+
+    set activeContent(tabName) {
+        this.tab.dataset.tab = tabName;
+    }
+
 };
