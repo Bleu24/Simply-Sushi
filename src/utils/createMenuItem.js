@@ -12,20 +12,20 @@ export default function (menuItem) {
     const itemHeading = document.createElement('h1');
     const itemPrice = document.createElement('h6');
     const itemDescription = document.createElement('p');
-    const itemHeader = document.createElement('div');
     const itemSubHeading = document.createElement('h3');
     const itemTitle = document.createElement('div');
+    const itemBody = document.createElement('div');
 
     // setup metadata on item
     itemContainer.id = menuItem.id;
-    itemContainer.classList.add('item__container');
-    itemHeader.classList.add('item__header');
+    itemContainer.classList.add('item__container', `${menuItem.itemName.toLowerCase()}`);
     itemHeading.classList.add('item__heading');
     itemPrice.classList.add('item__price');
     itemImage.classList.add('item__img');
     itemDescription.classList.add('item__desc');
     itemSubHeading.classList.add('item__subHeading');
     itemTitle.classList.add('item__title');
+    itemBody.classList.add('item__body');
     
 
     // setup Content
@@ -38,14 +38,14 @@ export default function (menuItem) {
 
     //assemble elements
     itemTitle.appendChild(itemHeading);
-    itemTitle.appendChild(itemSubHeading);
-
-    itemHeader.appendChild(itemTitle);
-    itemHeader.appendChild(itemPrice);
+    itemTitle.appendChild(itemPrice);
+    itemBody.appendChild(itemTitle);
+    itemBody.appendChild(itemSubHeading);
+    itemBody.appendChild(itemDescription);
 
     itemContainer.appendChild(itemImage);
-    itemContainer.appendChild(itemHeader);
-    itemContainer.appendChild(itemDescription);
+    itemContainer.appendChild(itemBody);
+
 
     return itemContainer;
 }
