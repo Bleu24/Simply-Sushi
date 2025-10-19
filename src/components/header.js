@@ -1,5 +1,6 @@
 import Button from "../utils/createButton";
 import logo from "../assets/img/logo.svg";
+import { animate, stagger } from "motion";
 
 export default function Header() {
     const header = document.querySelector('header');
@@ -7,7 +8,7 @@ export default function Header() {
     const logoDiv = document.querySelector('.nav__logo');
     const btnDiv = document.createElement('div');
     const ctaDiv = document.createElement('div');
-    
+
     btnDiv.classList.add('nav__btns');
     ctaDiv.classList.add('nav__cta');
 
