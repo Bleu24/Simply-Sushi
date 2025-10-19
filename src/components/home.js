@@ -2,8 +2,10 @@ import sushiImg from '../assets/img/sushi.png';
 import sushiPlateImg from '../assets/img/sushiplate.png';
 import noriImg from '../assets/img/nori.png'
 import createSubDiv  from '../utils/createSubDiv';
+import { state } from '../utils/state';
 
 export default function Home() {
+    state.activeContent = 'home';  
     const content = document.getElementById('content');
     const heroDiv = document.createElement('div');
     const h = document.createElement('h1');
