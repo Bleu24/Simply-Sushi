@@ -283,7 +283,6 @@ button:hover {
     }
 
     to {
-        background-color: var(--cta-bg);
         border-radius: 1rem;
     }
 }
