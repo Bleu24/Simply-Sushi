@@ -1,6 +1,6 @@
 import Button from "../utils/createButton";
 import logo from "../assets/img/logo.svg";
-import { animate, stagger, hover } from "motion";
+import { animate, hover, easeOut } from "motion";
 
 export default function Header() {
     const header = document.querySelector('header');
@@ -39,10 +39,9 @@ export default function Header() {
     header.appendChild(nav);
 
     hover(buttonList, e => {
-        animate(e, { scale: 1.05, textDecorationLine: 0.1 });
-        return () => animate(e, { scale: 1 });
+        animate(e, { scale: 1.05, textDecorationLine: 'underline' }, {duration: 0.1});
+        return () => animate(e, { scale: 1 , textDecorationLine: 'none'});
     });
-
 
     return header;
 
