@@ -10,7 +10,7 @@ import Gunkan from '../assets/img/gunkan.png';
 import Oshi from '../assets/img/oshi.png';
 import { MenuItem } from "../classes/MenuItem";
 import createMenuItem from "../utils/createMenuItem";
-import { animate, stagger, hover, scale } from "motion";
+import { animate, stagger, hover, scale, easeOut } from "motion";
 
 export default function Menu() {
     state.activeContent = 'menu';  
@@ -49,8 +49,8 @@ export default function Menu() {
 
     animate(".item__container", {opacity: 1}, {delay: stagger(0.1)});
     hover(".item__container", e => {
-        animate(e, { scale: 1.05, borderColor: "#ff8b7b" }, {duration: 0.3});
-        return () => animate(e, { scale: 1, borderColor: "#2E303E" }, {duration: 0.3});
+        animate(e, { scale: 1.05, borderColor: "#ff8b7b" }, {duration: 0.1});
+        return () => animate(e, { scale: 1, borderColor: "#2E303E" }, {duration: 0.1});
     });
 
     
