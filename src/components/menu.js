@@ -5,6 +5,9 @@ import Maki from '../assets/img/maki.png';
 import Temaki from '../assets/img/temaki.png';
 import Sashimi from '../assets/img/sashimi.png'
 import Chirashi from '../assets/img/chirashi.png';
+import Inari from '../assets/img/inari.png';
+import Gunkan from '../assets/img/gunkan.png';
+import Oshi from '../assets/img/oshi.png';
 import { MenuItem } from "../classes/MenuItem";
 import createMenuItem from "../utils/createMenuItem";
 import { animate, stagger, hover, scale } from "motion";
@@ -26,11 +29,14 @@ export default function Menu() {
     const sushis = [
         [Uramaki, 'Uramaki', 149.00, 'うらまき' ,'Rice on the outside, nori on the inside.'],
         [Nigiri, 'Nigiri', 149.00, 'にぎり', 'A slice of fish atop a small bed of rice.'],
-        [Maki, 'Maki', 149.00, 'まきずし', 'Rice and fillings wrapped in nori (seaweed), sliced into bite-sized rolls.'],
+        [Maki, 'Maki', 149.00, 'まきずし', 'Rice and fillings wrapped in nori, sliced into bite-sized rolls.'],
         [Temaki, 'Temaki', 199.00, 'てまき', 'Cone-shaped roll held in hand, filled with rice and toppings.'],
         [Sashimi, 'Sashimi', 249.00, 'さしみ', 'Thinly sliced raw fish or seafood, served without rice.'],
-        [Chirashi, 'Chirashi', 299.00, 'ちらし', 'A bowl of sushi rice topped with assorted sashimi and garnishes.']
-    ]
+        [Chirashi, 'Chirashi', 299.00, 'ちらし', 'A bowl of sushi rice topped with assorted sashimi and garnishes.'],
+        [Inari, 'Inari', 129.00, 'いなり', 'Sweet tofu pockets filled with sushi rice. A vegetarian-friendly option with a subtly sweet flavor'],
+        [Gunkan, 'Gunkan', 179.00, 'ぐんかん', 'Rice wrapped in nori and topped with soft ingredients like roe or chopped seafood.'],
+        [Oshi, 'Oshi', 189.00, 'おし', 'Pressed sushi from Osaka, shaped in a mold and layered with toppings like mackerel or shrimp.']
+    ];
 
     div.appendChild(pageTitle);
     
