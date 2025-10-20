@@ -109,6 +109,24 @@
     grid-column: 9 / 12;
 }
 
+.inari {
+    grid-row: 4;
+    grid-column: 2 / 5;
+}
+
+.gunkan {
+    grid-row: 4;
+    grid-column: 5 / 9;
+    justify-self: center;
+}
+
+.oshi {
+    grid-row: 4;
+    justify-self: end;
+    grid-column: 9 / 12;
+
+}
+
 #content[data-tab="menu"] {
     row-gap: 1rem;
 }
