@@ -1,11 +1,12 @@
 {
   "name": "simply-sushi",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
