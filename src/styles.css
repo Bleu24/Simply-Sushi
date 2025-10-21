@@ -258,7 +258,7 @@ nav {
 
 /* Component behaviour */
 
-button:hover {
+nav button:hover {
     cursor: pointer;
     animation-name: navHover;
     animation-duration: 500ms;
