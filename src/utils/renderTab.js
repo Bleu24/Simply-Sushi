@@ -7,6 +7,8 @@ import Contact from "../components/contact";
 export default function renderTab(requestedTab) {
 
     if(requestedTab === state.activeContent) return;
+
+    sessionStorage.setItem('tab', requestedTab);
     
     switch (requestedTab) {
         case 'home':
