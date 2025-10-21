@@ -1,1 +1,3 @@
 export const aboutBodyText = 'At Simply Sushi, we believe great sushi doesn\'t need to be complicated. It just needs to be honest, fresh, and beautifully made. Inspired by traditional Japanese techniques and refined with a modern touch, our menu highlights the purity of flavor and the beauty of simplicity. From hand-rolled temaki to delicate sashimi, every piece is prepared with care and respect for the ingredients.<br><br>Whether you\'re a longtime sushi lover or trying it for the first time, Simply Sushi offers a warm, approachable experience. No gimmicks—just thoughtful food, crafted with intention. Because we\'re not just serving sushi—we\'re sharing a story. One bite at a time.';
+
+export const defaultTab = { tab: 'home'};
