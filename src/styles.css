@@ -68,6 +68,9 @@
     --shadow: rgba(27, 27, 27, 0.08);
     --cta-bg: var(--ikura);
     --cta-text: #ffffff;
+    --card-bg: #181920;
+    --darker-bg: #09090C;
+    --card-border: #2E303E;
 }
 
 body {
