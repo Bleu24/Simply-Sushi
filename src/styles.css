@@ -124,7 +124,7 @@ nav {
     grid-column: 5 / 9;
 }
 
-nav button {
+.nav__btn {
     border-style: none;
     background-color: transparent;
     color: var(--cta-text);
@@ -141,10 +141,6 @@ nav button {
 }
 
 .nav__cta>button {
-    border-style: none;
-    border: 1px solid var(--plate);
-    border-radius: 1rem;
-    background-color: transparent;
     color: var(--cta-text);
     font-weight: 900;
     font-size: 1rem;
@@ -268,7 +264,7 @@ button:hover {
 
 .nav__cta>button:hover {
     cursor: pointer;
-    animation-name: ctaHover;
+    animation-name: navHover;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
@@ -293,12 +289,5 @@ button:hover {
 @keyframes logoHover {
     to {
         fill: var(--cta-bg);
-    }
-}
-
-@keyframes ctaHover {
-    to {
-        background-color: var(--seaweed);
-        color: var(--cta-text);
     }
 }
