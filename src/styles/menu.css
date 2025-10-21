@@ -10,8 +10,8 @@
 .item__container {
     height: auto;
     width: 400px;
-    background-color: #181920;
-    border: 2px solid #2E303E;
+    background-color:var(--card-bg);
+    border: 2px solid var(--card-border);
     border-radius: 2rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
