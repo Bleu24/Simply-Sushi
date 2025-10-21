@@ -1,0 +1,111 @@
+.form {
+    grid-column: 5 / 9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid var(--card-border);
+}
+
+.form__heading {
+    color: white;
+    align-self: center;
+    margin: 0;
+    opacity: 0;
+}
+
+.form__row {
+    grid-column: 4 / 10;
+    justify-content: space-between;
+    display: flex;
+    opacity: 0;
+}
+
+.form__inpFields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;
+}
+
+.form__inpFields>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form__message {
+    display: flex;
+}
+
+#message {
+    color: white;
+    background: var(--darker-bg);
+    border: 0;
+    width: 100%;
+    resize: vertical;
+    border-radius: 5px;
+    min-height: 100px;
+    border: 1px solid var(--card-border);
+    padding: 0;
+}
+
+.form__field.message {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.form__field {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    height: 2.5rem;
+    color: white;
+    background-color: var(--darker-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+label {
+    letter-spacing: -1px;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+form svg {
+    width: 24px;
+    stroke: white;
+}
+
+.form__submit {
+    min-height: 2.8rem;
+    border-radius: 5px;
+    border: none;
+    opacity: 0;
+    background-color: var(--darker-bg);
+    padding: 0;
+    color: var(--cta-text);
+    display: grid;
+    grid-template-columns: min-content repeat(11, auto);
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid var(--card-border);
+}
+
+.form__submit svg {
+    grid-column: 6 / 9;
+    justify-self: center;
+}
+
+.form__submit:hover {
+    cursor: pointer;
+}
