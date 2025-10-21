@@ -3,6 +3,7 @@ import sushiPlateImg from '../assets/img/sushiplate.png';
 import noriImg from '../assets/img/nori.png'
 import createSubDiv  from '../utils/createSubDiv';
 import { state } from '../utils/state';
+import { animate, stagger } from 'motion';
 
 export default function Home() {
     state.activeContent = 'home';  
@@ -44,5 +45,7 @@ export default function Home() {
     content.appendChild(subDivObj2.el);
 
     content.dataset.tab = 'home';
+
+    animate(content.childNodes, {opacity: 1}, {delay: stagger(0.1)} );
     return content;
 }
