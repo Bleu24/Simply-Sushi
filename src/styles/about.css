@@ -1,0 +1,48 @@
+.about__container {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-columns: subgrid;
+    width: max-content;
+    background-color: var(--card-bg);
+    padding: 3rem;
+    justify-items: center;
+    border-radius: 3rem;
+    border: 3px solid var(--card-border);
+    gap: 1rem;
+}
+
+.about__cover {
+    grid-row: 1;
+    width: 512px;
+    grid-column: 1 / 5;
+    align-self: center;
+    border-radius: 3rem;
+}
+
+.about__title {
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    font-size: 8rem;
+    color: var(--cta-text);
+    padding: 1rem;
+}
+
+.about__text {
+    padding: 1rem;
+    margin: 0;
+    color: var(--cta-text);
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.about__body {
+    grid-row: 1;
+    grid-column: 5 / 12;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: 2rem;
+    border-radius: 3rem;
+    border: 3px solid #1B1B23;
+    background-color: var(--darker-bg);
+}
