@@ -7,7 +7,7 @@
     padding: 3rem;
     justify-items: center;
     border-radius: 3rem;
-    border: 3px solid var(--card-border);
+    border: 2px solid var(--card-border);
     gap: 1rem;
 }
 
