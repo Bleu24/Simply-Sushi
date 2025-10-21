@@ -16,6 +16,7 @@ export default function (content) {
     // Set up content
     pageTitle.textContent = content.title;
     img.src = content.cover;
+    img.alt = 'A Photo of Simply Sushi Restaurant'
     text.innerHTML = content.body;
 
     // Assemble elements
